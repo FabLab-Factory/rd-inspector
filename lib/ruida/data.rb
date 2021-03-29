@@ -19,6 +19,8 @@ module Ruida
       @magic = case @filetype[2]
       when 0xfa # Model 320, 633x, 644xg, 644xs, 654xs: D2 9B FA
         0x88
+    #  when 0x70
+    #    0x88
       when 0x61 # Model 634xg: 49 04 61
         0x11
       else
